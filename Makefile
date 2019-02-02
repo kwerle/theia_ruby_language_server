@@ -13,3 +13,6 @@ shell: image
 
 server: image
 	docker run -it $(VOLUMES) -p 3000:3000 $(IMAGE_NAME)
+
+clean:
+	rm -rf node_modules ruby/lib ruby/node_modules
